@@ -8,6 +8,10 @@ const ejs = require('ejs');
 
 app.set('view engine', 'ejs');
 app.use(express.static('./app/public'));
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json());
+app.use(morgan('tiny'));
+ 
 
 app.get('/', (req, res, next)=> {
     res.render('pages/index');
