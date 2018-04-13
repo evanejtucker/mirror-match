@@ -2,6 +2,7 @@ $('document').ready(function(){
 
     // Global Variables
     // ------------------------------------------------------------------------------------------
+    
     let playerArray = ['batman', 'superman', 'green lantern', 'wonder woman'];
     let usedPlayers = [];
     let p1 = {
@@ -9,13 +10,13 @@ $('document').ready(function(){
         wins: [],
         loses: []
     }
+
     let p2 = {
         name: '',
         wins: [],
         loses: []
     }
     
-
     // Functions
     // ------------------------------------------------------------------------------------------
     const updateNames = (name1, name2)=> {
@@ -76,7 +77,7 @@ $('document').ready(function(){
                 console.log('p1 loses: ' + p1.loses);
             }
             getCurrentFighter();
-        })
+        });
     }
 
 
